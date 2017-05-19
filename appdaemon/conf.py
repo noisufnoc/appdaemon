@@ -57,6 +57,9 @@ config_dir = None
 
 # Dashboard
 
+webserver_host = None
+webserver_port = None
+
 dash_host = None
 dash_dir = None
 dash_port = None

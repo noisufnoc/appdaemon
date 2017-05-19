@@ -1453,6 +1453,8 @@ def main():
     conf.app_dir = config['AppDaemon'].get("app_dir")
     conf.dashboard_dir = config['AppDaemon'].get("dash_dir")
     conf.timeout = config['AppDaemon'].get("timeout")
+    conf.webserver_host = config['AppDaemon'].get("webserver_host")
+    conf.webserver_port = config['AppDaemon'].get("webserver_port")
 
     if config['AppDaemon'].get("disable_apps") == "1":
         conf.apps = False

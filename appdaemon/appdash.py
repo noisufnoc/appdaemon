@@ -250,7 +250,7 @@ def run_dash(loop):
         setup_routes()
 
         handler = app.make_handler()
-        f = loop.create_server(handler, conf.dash_host, int(conf.dash_port))
+        f = loop.create_server(handler, conf.webserver_host, int(conf.webserver_port))
         srv = loop.run_until_complete(f)
         ha.log(conf.dash, "INFO", "HADashboard Started")
         ha.log(conf.dash, "INFO",
